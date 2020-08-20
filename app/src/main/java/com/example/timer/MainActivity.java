@@ -50,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
         });
         btnOperation();
     }
+    @Override
+    protected void onPause() {
 
+        super.onPause();
+    }
     public void onBtnClick(View view) {
         if (counterIsActive == false) {
             counterIsActive = true;
